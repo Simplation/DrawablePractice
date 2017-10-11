@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- state_pressed 代表按下的状态 -->
+    <!-- state_checked 代表选中的状态-->
+    <!-- state_window_focused 代表获取窗口的焦点-->
+    <!-- state_enabled 代表可以开启的状态-->
+    <item android:drawable="@drawable/ic_launcher" android:state_pressed="false"/>
+    <item android:drawable="@drawable/ic_launcher_round" android:state_window_focused="true"/>
+    <item android:drawable="@drawable/ic_launcher" android:state_checked="false"/>
+    <item android:drawable="@drawable/ic_launcher" android:state_window_focused="false"/>
+    <item android:drawable="@drawable/ic_launcher" android:state_enabled="false"/>
+
+</selector>
