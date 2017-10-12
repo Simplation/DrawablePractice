@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestRoundActivity">
+        <activity android:name=".TestCornerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -37,8 +37,8 @@
         <!-- ⑦ ClipDrawable -->
         <activity android:name=".ClipDrawableActivity" />
 
-        <!--测试圆角图片-->
-        <activity android:name=".TestCornerActivity" />
+        <!--测试圆行图片-->
+        <activity android:name=".TestRoundActivity" />
     </application>
 
 </manifest>

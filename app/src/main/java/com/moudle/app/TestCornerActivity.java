@@ -22,7 +22,7 @@ public class TestCornerActivity extends AppCompatActivity {
 
         iv_head_corner = (ImageView) findViewById(R.id.iv_head_corner);
 
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.image_head);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.iv_scape);
 
         iv_head_corner.setImageDrawable(new CornerDrawable(bitmap));
     }

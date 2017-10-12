@@ -23,7 +23,7 @@ public class TestRoundActivity extends AppCompatActivity {
 
         iv_head = (ImageView) findViewById(R.id.iv_head);
 
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.image_head);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.iv_scape);
 
         iv_head.setImageDrawable(new RoundDrawable(bitmap));
     }
