@@ -1,3 +1,3 @@
 # DrawablePractice
 
-- 关于Drawable的知识点以及定义圆角图片和圆形图片
+- Knowledge points about Drawable and the definition of rounded corner pictures and round pictures
