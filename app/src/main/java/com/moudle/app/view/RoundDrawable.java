@@ -33,7 +33,7 @@ public class RoundDrawable extends Drawable {
 
     @Override
     public void draw(@NonNull Canvas canvas) {
-        canvas.drawCircle(mWidth >> 1, mWidth >> 2, mWidth >> 2, mPaint);
+        canvas.drawCircle(mWidth / 2, mWidth / 2, mWidth / 2, mPaint);
     }
 
     @Override
