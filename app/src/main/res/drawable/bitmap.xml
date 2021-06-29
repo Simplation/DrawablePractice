@@ -4,5 +4,4 @@
         android:antialias="true"
         android:tileMode="mirror"
         android:src="@drawable/ic_launcher"
-        android:autoMirrored="true">
-</bitmap>
+        android:autoMirrored="true" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.moudle.app">
+    package="com.moudle.app">
 
     <application
         android:allowBackup="true"
@@ -9,36 +9,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestCornerActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".activity.TestCornerActivity" />
 
         <!-- ① BitmapDrawable -->
-        <activity android:name=".BitmapDrawableActivity"/>
+        <activity android:name=".activity.BitmapDrawableActivity" />
 
         <!-- ② LayerDrawable -->
-        <activity android:name=".LayerDrawableActivity"/>
+        <activity android:name=".activity.LayerDrawableActivity" />
 
         <!-- ③ StateDrawable -->
-        <activity android:name=".StateDrawableActivity"/>
+        <activity android:name=".activity.StateDrawableActivity" />
 
         <!-- ④ LevelDrawable -->
-        <activity android:name=".LevelDrawableActivity"/>
+        <activity android:name=".activity.LevelDrawableActivity" />
 
         <!-- ⑤ TranslationDrawable -->
-        <activity android:name=".TranslationDrawableActivity"/>
+        <activity android:name=".activity.TranslationDrawableActivity" />
 
         <!-- ⑥ InsetDrawable -->
-        <activity android:name=".InsetDrawableActivity"/>
-        <!-- ⑦ ClipDrawable -->
-        <activity android:name=".ClipDrawableActivity" />
+        <activity android:name=".activity.InsetDrawableActivity" />
 
-        <!--测试圆行图片-->
-        <activity android:name=".TestRoundActivity" />
+        <!-- ⑦ ClipDrawable -->
+        <activity android:name=".activity.ClipDrawableActivity" />
+
+        <!-- 测试圆行图片 -->
+        <activity android:name=".activity.TestRoundActivity" />
     </application>
 
 </manifest>
