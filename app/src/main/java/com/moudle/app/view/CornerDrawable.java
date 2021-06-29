@@ -9,18 +9,19 @@ import android.graphics.PixelFormat;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * 自定义圆角图片
  */
 public class CornerDrawable extends Drawable {
 
-    private Paint mPaint;
+    private final Paint mPaint;
 //    private int mWidth;
-    private Bitmap mBitmap;
+    private final Bitmap mBitmap;
     private RectF rectF;
 
     public CornerDrawable(Bitmap bitmap) {

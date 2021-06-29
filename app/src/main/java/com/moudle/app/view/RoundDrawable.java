@@ -8,33 +8,32 @@ import android.graphics.Paint;
 import android.graphics.PixelFormat;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * 自定义圆形图片
  */
 public class RoundDrawable extends Drawable {
 
-    private Paint mPaint;
-    private Bitmap mBitmap;
-    private int mWidth;
+    private final Paint mPaint;
+    private final int mWidth;
 
     public RoundDrawable(Bitmap bitmap) {
-        this.mBitmap = bitmap;
 
-        BitmapShader bitmapShader = new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
+        BitmapShader bitmapShader = new BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
         mPaint.setShader(bitmapShader);
 
-        mWidth = Math.min(mBitmap.getWidth(), mBitmap.getHeight());
+        mWidth = Math.min(bitmap.getWidth(), bitmap.getHeight());
     }
 
     @Override
     public void draw(@NonNull Canvas canvas) {
-        canvas.drawCircle(mWidth / 2, mWidth / 2, mWidth / 2, mPaint);
+        canvas.drawCircle(mWidth >> 1, mWidth >> 2, mWidth >> 2, mPaint);
     }
 
     @Override

@@ -1,11 +1,10 @@
 package com.moudle.app;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 
 /**
@@ -21,13 +20,8 @@ public class StateDrawableActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_state);
 
-        iv = (ImageView) findViewById(R.id.iv_layer);
-        iv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                iv.setImageResource(R.drawable.ic_launcher_round);
-            }
-        });
+        iv = findViewById(R.id.iv_layer);
+        iv.setOnClickListener(view -> iv.setImageResource(R.drawable.ic_launcher_round));
 
         Log.e(TAG, "LayerDrawableActivity:" + iv.toString());
     }

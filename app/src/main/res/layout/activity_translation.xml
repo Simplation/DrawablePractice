@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".TranslationDrawableActivity">
 
     <ImageView
         android:id="@+id/iv_trans"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/translation"/>
+        android:src="@drawable/translation" />
 
     <Button
         android:id="@+id/btn_on"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="开灯"/>
+        android:text="开灯" />
 
     <Button
         android:id="@+id/btn_off"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="关灯"/>
+        android:text="关灯" />
 
 </LinearLayout>

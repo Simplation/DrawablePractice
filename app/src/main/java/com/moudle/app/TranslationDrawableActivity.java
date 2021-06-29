@@ -2,9 +2,8 @@ package com.moudle.app;
 
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -13,7 +12,6 @@ import android.widget.ImageView;
  */
 public class TranslationDrawableActivity extends AppCompatActivity {
 
-    private Button onBtn, offBtn;
     private ImageView iv_trans;
 
     @Override
@@ -21,24 +19,18 @@ public class TranslationDrawableActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_translation);
 
-        iv_trans = (ImageView) findViewById(R.id.iv_trans);
-        onBtn = (Button) findViewById(R.id.btn_on);
-        offBtn = (Button) findViewById(R.id.btn_off);
+        iv_trans = findViewById(R.id.iv_trans);
+        Button onBtn = findViewById(R.id.btn_on);
+        Button offBtn = findViewById(R.id.btn_off);
 
-        onBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                TransitionDrawable trans = (TransitionDrawable) iv_trans.getDrawable();
-                trans.startTransition(1500);
-            }
+        onBtn.setOnClickListener(view -> {
+            TransitionDrawable trans = (TransitionDrawable) iv_trans.getDrawable();
+            trans.startTransition(1500);
         });
 
-        offBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                TransitionDrawable trans = (TransitionDrawable) iv_trans.getDrawable();
-                trans.reverseTransition(1500);
-            }
+        offBtn.setOnClickListener(view -> {
+            TransitionDrawable trans = (TransitionDrawable) iv_trans.getDrawable();
+            trans.reverseTransition(1500);
         });
 
     }

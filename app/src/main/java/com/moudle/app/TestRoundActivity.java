@@ -2,11 +2,10 @@ package com.moudle.app;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-import com.moudle.app.view.CornerDrawable;
 import com.moudle.app.view.RoundDrawable;
 
 /**
@@ -14,14 +13,12 @@ import com.moudle.app.view.RoundDrawable;
  */
 public class TestRoundActivity extends AppCompatActivity {
 
-    private ImageView iv_head;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_round);
 
-        iv_head = (ImageView) findViewById(R.id.iv_head);
+        ImageView iv_head = findViewById(R.id.iv_head);
 
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.iv_scape);
 
