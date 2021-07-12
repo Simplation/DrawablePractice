@@ -23,16 +23,22 @@ class MainActivity : AppCompatActivity() {
      * 设置点击事件
      */
     private fun initClick() {
-        mainBinding.testRound.setOnClickListener(mOnClickListener)
-        mainBinding.testCorner.setOnClickListener(mOnClickListener)
-        mainBinding.testRound.setOnClickListener(mOnClickListener)
-        mainBinding.bitmapDrawable.setOnClickListener(mOnClickListener)
-        mainBinding.clipDrawable.setOnClickListener(mOnClickListener)
-        mainBinding.insetDrawable.setOnClickListener(mOnClickListener)
-        mainBinding.layerDrawable.setOnClickListener(mOnClickListener)
-        mainBinding.levelDrawable.setOnClickListener(mOnClickListener)
-        mainBinding.stateDrawable.setOnClickListener(mOnClickListener)
-        mainBinding.translationDrawable.setOnClickListener(mOnClickListener)
+
+        mainBinding.apply {
+            testRound.setOnClickListener(mOnClickListener)
+            testCorner.setOnClickListener(mOnClickListener)
+            testRound.setOnClickListener(mOnClickListener)
+            bitmapDrawable.setOnClickListener(mOnClickListener)
+            clipDrawable.setOnClickListener(mOnClickListener)
+            insetDrawable.setOnClickListener(mOnClickListener)
+            layerDrawable.setOnClickListener(mOnClickListener)
+            levelDrawable.setOnClickListener(mOnClickListener)
+            stateDrawable.setOnClickListener(mOnClickListener)
+            translationDrawable.setOnClickListener(mOnClickListener)
+        }
+
+
+
     }
 
     /**
